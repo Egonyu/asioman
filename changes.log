@@ -1,0 +1,64 @@
+Change log Apr 2020:
+1) Feature: Subscriptions (System can run on any of three ways for exams/LMS payments
+	1. Individual - Student will buy the individual exam/LMS
+	2. Subscription fixed - Admin/Owner can create package with fixed duration so that end user can subscribe for the entire system for the particular period specified by admin
+	3. Subscription custom - End user/Student can choose how much duration he need the subscription
+2) Feature: Invoice email for the payment immediately after the payment
+3) Feature: Admin OR student can resend invoice to his/her email whenever they need
+-------------------------------------------------------------
+
+Change log Mar 2020:
+1) Fix (String): Users--Add--Phone no. field shows 10-15 digits, but it taking only 10 digits
+2) Fix (String): Coupon Codes--Add--There is no space between Exam series
+3) Fix (String): Student--Dashboard--Analysis by Subject--Subject spelling mistake
+4) Fix (Mobile App): We gave more content in question, scroll is not working while taking exam
+5) Fix (Mobile App): While updating gradle exam is crashing
+6) Fix (Mobile App): Breadcrumb mistake in mobile app
+7) Fix: Login issue with Facebook
+7) Feature: Implement login with twitter
+-------------------------------------------------------------
+
+Change log Jan 2017:
+1) Menorah OES upgrated to laravel 5.5
+2) Full screen for Exam page
+3) Right click and copy questions disabled
+4) Front end pages added
+	1) Terms and conditions
+	2) Privacy and Polocy
+5) Social logins are upgraded
+6) Other small issues fixed
+7) Documentation updated
+-------------------------------------------------------------
+
+Changes log May 2019:
+1) Menorah OES  laravel 5.8
+1. The Administrator Should assign the Categories to the Students.
+2. All the tests with registration, without registration and paid tests should appear on the homepage.
+
+3. Student Testimonies about System or Exams based on Client uses and it should be shown on the Homepage. only admin approved testimonies will be displayed on the front end
+
+4. Give an Option to admin for adding Front end pages
+
+5.Option for  Adding FAQs to Admin we have to show this in the front end
+
+6.Email Activation link for Register Users(to avoid duplicate users)
+
+7.Home Page Search bar
+
+8. Complete Account Disable option for the admin if any Fraud user/activity
+
+9. Need to Add Blog, an admin  will add Blogs it should appear Header menu.
+
+10.Resume builder
+
+11.Exam layout
+
+--------------------------------------
+
+without webservices
+
+
+
+
+
+
