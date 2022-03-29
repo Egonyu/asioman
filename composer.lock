@@ -699,41 +699,46 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.4.2",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
-                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "ext-zlib": "*",
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+            },
+            "suggest": {
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -741,12 +746,33 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
                     "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
                 }
             ],
@@ -754,13 +780,32 @@
             "keywords": [
                 "http",
                 "message",
+                "psr-7",
                 "request",
                 "response",
                 "stream",
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20T17:10:46+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-20T21:51:18+00:00"
         },
         {
             "name": "hassankhan/config",
@@ -2378,6 +2423,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -2546,6 +2594,50 @@
                 "shell"
             ],
             "time": "2018-04-02T05:41:44+00:00"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -4311,107 +4403,6 @@
     ],
     "packages-dev": [
         {
-            "name": "anam/phantomjs-linux-x86-binary",
-            "version": "v2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/anam-hossain/phantomjs-linux-x86-binary.git",
-                "reference": "cb90cd0e7bd4ad34f52e6834783b1c5adae15014"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/anam-hossain/phantomjs-linux-x86-binary/zipball/cb90cd0e7bd4ad34f52e6834783b1c5adae15014",
-                "reference": "cb90cd0e7bd4ad34f52e6834783b1c5adae15014",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/phantomjs"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Anam\\PhantomLinux\\": "/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Anam hossain",
-                    "email": "enam33@gmail.com"
-                }
-            ],
-            "description": "PhantomJS static linked binary for 64 bit linux systems. Most of Linux distributions are supported including Ubuntu, Debian, Fedora and CentOS.",
-            "homepage": "http://phantomjs.org/download.html",
-            "keywords": [
-                "binary",
-                "phantomjs",
-                "phantomjs binary"
-            ],
-            "time": "2016-04-05T05:24:48+00:00"
-        },
-        {
-            "name": "anam/phantommagick",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/anam-hossain/phantommagick.git",
-                "reference": "7da1cb92198717e5aba7a4a8c9b8eb61c3ae12eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/anam-hossain/phantommagick/zipball/7da1cb92198717e5aba7a4a8c9b8eb61c3ae12eb",
-                "reference": "7da1cb92198717e5aba7a4a8c9b8eb61c3ae12eb",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Anam\\PhantomMagick\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anam hossain",
-                    "email": "enam33@gmail.com"
-                }
-            ],
-            "description": "PhantomMagick provides a simple API to ease the process of converting HTML to PDF or images",
-            "homepage": "https://github.com/anam-hossain/phantommagick",
-            "keywords": [
-                "Html 2 jpg",
-                "Html 2 pdf",
-                "Laravel pdf",
-                "Phantom",
-                "Screen capture",
-                "converter",
-                "html to image",
-                "html to pdf",
-                "html to png",
-                "image converter",
-                "invoice",
-                "laravel",
-                "pdf",
-                "pdf converter",
-                "phantomjs"
-            ],
-            "time": "2017-08-07T09:06:12+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -6159,5 +6150,6 @@
     "platform": {
         "php": ">=7.1.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
