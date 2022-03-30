@@ -484,20 +484,24 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.6.3",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "728952b90a333b5c6f77f06ea9422b94b585878d"
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/728952b90a333b5c6f77f06ea9422b94b585878d",
-                "reference": "728952b90a333b5c6f77f06ea9422b94b585878d",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -522,7 +526,11 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-05-14T14:47:48+00:00"
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+            },
+            "time": "2019-12-30T22:54:17+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -4311,107 +4319,6 @@
     ],
     "packages-dev": [
         {
-            "name": "anam/phantomjs-linux-x86-binary",
-            "version": "v2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/anam-hossain/phantomjs-linux-x86-binary.git",
-                "reference": "cb90cd0e7bd4ad34f52e6834783b1c5adae15014"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/anam-hossain/phantomjs-linux-x86-binary/zipball/cb90cd0e7bd4ad34f52e6834783b1c5adae15014",
-                "reference": "cb90cd0e7bd4ad34f52e6834783b1c5adae15014",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/phantomjs"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Anam\\PhantomLinux\\": "/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Anam hossain",
-                    "email": "enam33@gmail.com"
-                }
-            ],
-            "description": "PhantomJS static linked binary for 64 bit linux systems. Most of Linux distributions are supported including Ubuntu, Debian, Fedora and CentOS.",
-            "homepage": "http://phantomjs.org/download.html",
-            "keywords": [
-                "binary",
-                "phantomjs",
-                "phantomjs binary"
-            ],
-            "time": "2016-04-05T05:24:48+00:00"
-        },
-        {
-            "name": "anam/phantommagick",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/anam-hossain/phantommagick.git",
-                "reference": "7da1cb92198717e5aba7a4a8c9b8eb61c3ae12eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/anam-hossain/phantommagick/zipball/7da1cb92198717e5aba7a4a8c9b8eb61c3ae12eb",
-                "reference": "7da1cb92198717e5aba7a4a8c9b8eb61c3ae12eb",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Anam\\PhantomMagick\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anam hossain",
-                    "email": "enam33@gmail.com"
-                }
-            ],
-            "description": "PhantomMagick provides a simple API to ease the process of converting HTML to PDF or images",
-            "homepage": "https://github.com/anam-hossain/phantommagick",
-            "keywords": [
-                "Html 2 jpg",
-                "Html 2 pdf",
-                "Laravel pdf",
-                "Phantom",
-                "Screen capture",
-                "converter",
-                "html to image",
-                "html to pdf",
-                "html to png",
-                "image converter",
-                "invoice",
-                "laravel",
-                "pdf",
-                "pdf converter",
-                "phantomjs"
-            ],
-            "time": "2017-08-07T09:06:12+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -6159,5 +6066,6 @@
     "platform": {
         "php": ">=7.1.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
